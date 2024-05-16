@@ -4,6 +4,7 @@ import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { IoIosMenu } from 'react-icons/io'
 import SideNavBar from './SideNavBar'
 
+
 const NavBar = () => {
   const [sideOpen,setSideOpen] = useState(false);
 

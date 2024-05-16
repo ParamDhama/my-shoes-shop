@@ -1,42 +1,28 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.btn-bg {
+    @apply rounded-full bg-slate-900 w-full h-20 text-slate-100 font-light   shadow-lg ;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.btn-no-bg{
+  @apply rounded-full bg-none w-full h-20 border border-slate-300 text-slate-700 font-normal shadow-lg;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-size{
+  @apply rounded-lg bg-none  h-14 border border-slate-300 font-medium  hover:border-slate-700 text-base;
+}
+.btn-shoes-img{
+  @apply rounded-md bg-none size-20 border border-slate-300 font-medium text-lg hover:border-slate-700  ;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/509edbec-df90-4229-9357-6dd5a5877975/v2k-run-shoes-zJV8TV.png");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.big-img {
+  @apply rounded-lg md:ml-20 ml-10 mt-14;
+  background-image: url("https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/509edbec-df90-4229-9357-6dd5a5877975/v2k-run-shoes-zJV8TV.png");
+  background-size: cover;
+  background-position: center;
+
 }
 
-.card {
-  padding: 2em;
-}
 
-.read-the-docs {
-  color: #888;
-}
